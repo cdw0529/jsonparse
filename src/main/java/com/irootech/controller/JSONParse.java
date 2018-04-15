@@ -37,7 +37,7 @@ public class JSONParse {
     @RequestMapping("/jsonToArray")
     @ResponseBody
     public List<User> jsonToArray(){
-        String json =  "[{\"name\":\"张三\",\"age\":18},{'\"name\"':'\"李四\"','\"age\"':19}]";
+        String json =  "[{\"name\":\"张三\",\"age\":18},{'\"name\"':\"李四\",\"age\":19}]";
 
         List<User> users = JSON.parseArray(json, User.class);
 
